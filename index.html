@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-9">
     <meta name="description" content="Meeting minutes for the My CSE 110 Timer project's brainstorming session.">
     <title>Teresa's Sample Team Timer First Brainstorm</title>
 </head>
 <body>
+
 
     <header> 
         <h1>Sample Team Timer First Brainstorm</h1>
@@ -13,7 +14,22 @@
         <h3><i>Date Initiated: April 15, 2024</i></h3>
     </header>
 
-    <section>
+    <div class="navigation">
+        <nav>
+            <ul>
+                <li><a href="#attendance">Attendance</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#unfinished-business">Unfinished Business</a></li>
+                <li><a href="#new-business">New Business</a></li>
+                <li><a href="#miscellaneous">Miscellaneous</a></li>
+                <li><a href="#diagrams">Diagrams Presented</a></li>
+                <li><a href="#recordings">Meeting Recordings</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- <section id="attendance"></section>
         <h2><b>Attendance</b></h2>
         <ul>
             <li><strong>Eric Cartman</strong> - Project Manager</li>
@@ -21,9 +37,38 @@
             <li><strong>Kyle Broflovski</strong> - UX Designer</li>
             <li><strong>Stan Marsh</strong> - Software Engineer</li>
         </ul>
+    </section> -->
+
+    <section id="attendance">
+        <h2><b>Attendance</b></h2>
+        <form id="attendance-form">
+            <ul>
+                <li>
+                    <label>
+                        <input type="checkbox" name="attendance" value="Eric Cartman" checked> <strong>Eric Cartman</strong> - Project Manager
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" name="attendance" value="Kenny McCormick" checked> <strong>Kenny McCormick</strong> - Lead Developer
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" name="attendance" value="Kyle Broflovski" checked> <strong>Kyle Broflovski</strong> - UX Designer
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" name="attendance" value="Stan Marsh" checked> <strong>Stan Marsh</strong> - Software Engineer
+                    </label>
+                </li>
+            </ul>
+        </form>
     </section>
 
     <section>
+    <section id="agenda"></section>
         <h2>Agenda</h2>
         <ol>
             <li>Team review of the previous meeting</li>
@@ -33,12 +78,12 @@
         </ol>
     </section>
 
-    <section>
+    <section id="unfinished-business">
         <h2>Unfinished Business</h2>
         <p><a>Discussion on unresolved issues from the last meeting, including deployment challenges.</a></p>
     </section>
 
-    <section>
+    <section id="new-business">
         <h2>New Business to Discuss</h2>
         <ul>
             <li>Proposed new scheduling feature for the Timer app</li>
@@ -47,18 +92,18 @@
         </ul>
     </section>
 
-    <section>
+    <section id="miscellaneous">
         <h2>Miscellaneous</h2>
-        <p>Team concerns about the current sprint workload were addressed, <br>AND additional support was allocated. Good job everyone.</p>
+        <p>Team concerns about the current sprint workload were addressed, <br>AND additional support was allocated.<span class="highlight">Good job everyone.</span></p>
     </section>
 
-    <section>
+    <section id="diagrams">
         <h2>Diagrams Presented</h2>
         <img src="presentation.png" alt="Presentation Picture">
         <img src="diagram.png" alt="Diagram Proposed During Team Meeting">
     </section>
 
-    <section>
+    <section id="recordings"> 
         <h2>Meeting Recordings</h2>
         <article>
             <h3>Audio Recording</h3>
@@ -75,7 +120,7 @@
         </article>
     </section>
 
-    <section>
+    <section id="feedback"> 
         <h2>Feedback</h2>
         <details>
             <summary>Click to provide feedback on the meeting</summary>
