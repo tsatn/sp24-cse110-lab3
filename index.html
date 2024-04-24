@@ -5,11 +5,32 @@
     <meta charset="UTF-9">
     <meta name="description" content="Meeting minutes for the My CSE 110 Timer project's brainstorming session.">
     <link rel="icon" type="image/png" href="favicon.png">
+    <!-- External CSS file link -->
+    /* Internal CSS */
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        /* Internal CSS */
+        body {
+            font-family: 'Open Sans', sans-serif; /* Fallback font */
+            background-color: #4da29b;
+            text-align: left; 
+        }
+        h1 {
+            color: rgba(168, 159, 206, 0.87); /* Inline style example */
+        }
+        .highlight {
+            background-color: #cf8ac0; /* Inline style example */
+        }
+        /* Media query for responsiveness */
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: var(--background-color-mobile, #d8f194); /* Fallback for mobile */
+            }
+        }
+    </style>
 </head>
-<body>
-
-
-    <header> 
+<body style="margin: 0; /* Inline CSS example */">
+    <header style="border-bottom: 2px solid #cbda9c; padding-bottom: 10px;"> <!-- Inline CSS example -->
         <h1>Sample Team Timer First Brainstorm</h1>
         <h2><em>Brainstorming Session</em></h2>
         <h3><i>Date Initiated: April 15, 2024</i></h3>
