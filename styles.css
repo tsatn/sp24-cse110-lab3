@@ -1,0 +1,140 @@
+:root {
+    --main-bg-color: #57a1a2; /* primary background color */
+    --accent-color: #78e9dd; /* accent color for interactive elements */
+    --main-text-color: #463370; /* the main text color is black */
+    --link-hover-color: #a193ea; /* Link hover color is light purple*/
+    --fallback-color: #ffffff; /* fallback color if the primary is not loaded */
+    --header-text-color: #d2f3cf; /* light green for headers */
+}
+
+/* Body and Typography */
+body {
+    background-color: var(--main-bg-color, var(--fallback-color)); /* Fallback to white if main-bg-color is not available */
+    color: var(--main-text-pushcolor, black); /* Fallback to black */
+    margin: 0; 
+    font-size: 18px; 
+    text-align: left;     
+}
+
+/* Navigation */
+nav {
+    background-color: var(--accent-color, cyan);  /* Fallback color cyan */
+    text-align: center;                             /* Centers text in navigation */
+    padding: 1rem 0;                                /* Shorthand for vertical padding */
+}
+
+nav ul {
+    list-style: none;
+    display: none;
+    padding: 0; 
+}
+
+nav ul li {
+    display: inline; 
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem; 
+}
+
+/* Links */
+a:hover {
+    color: var(--link-hover-color);
+    text-decoration: underline; 
+}
+
+/* Flexbox Setup for Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem; 
+    background-color: #eee;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto; 
+    text-align: center; /* Centers text in the footer */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* Block display on smaller screens */
+        margin: 10px 0; /* Shorthand for vertical margins */
+    }
+}
+
+/* Grid Layout for Sections */
+section {
+    display: grid;
+    grid-template-columns: 1fr; /* One column layout to ensure left alignment */
+    gap: 20px;
+    padding: 20px;
+    text-align: left; /* Aligns text to the left */
+}
+
+/* Grid Layout for specific section (if needed) */
+.section-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 20px;
+    align-items: start; /* Aligning grid items to the start of the cell */
+    /* Use this class on a section that requires a grid layout */
+}
+
+/* Adjustments for image containers to ensure proper alignment */
+.image-container {
+    text-align: left; /* Aligns images to the left */
+}
+
+/* Ensure images do not overflow their container and are aligned left */
+.image-container img {
+    width: auto; /* Default width to auto so it doesn't stretch */
+    max-width: 100%; /* Ensures the image is responsive and fits its container */
+    height: auto; /* Maintains the aspect ratio of the image */
+    display: block; /* Ensures the image is a block-level element */
+    margin-left: 0; /* Aligns image to the left */
+}
+
+/* Text container if necessary for specific alignment */
+.text-container {
+    text-align: left; /* Explicitly aligns text to the left */
+}
+
+/* Miscellaneous Styles */
+.highlight {
+    background-color: yellow;
+    padding: 5px; /* Absolute unit */
+    text-decoration: underline; /* Adds an overline to highlighted text */
+}
+
+/* Experiment with Borders and Box Model */
+header {
+    border-style: solid; /* Solid border style */
+    border-color: var(--accent-color); /* Border color */
+    border-width: 3px; /* Border width */
+    padding: 20px; /* Shorthand for padding */
+    margin: 10px; /* Shorthand for all-around margin */
+    color: var(--header-text-color); /* Text color for header */
+    text-align: left; /* Aligns header text to the left */
+}
+
+/* Pseudo-classes */
+button:hover, button:active {
+    background-color: var(--accent-color);
+    color: rgb(159, 149, 224);
+    text-decoration: none; /* No text decoration for buttons */
+}
+
+@media (max-width: 660px) {
+    body {
+        font-size: 18px; /* Smaller font size on smaller screens */
+    }
+}
+
+
+/* PART 2 */
+
